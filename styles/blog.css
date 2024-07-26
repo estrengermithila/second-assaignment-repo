@@ -13,6 +13,7 @@
 }
 .header{
     background-color: black;
+    
 }
  .nav-container{
 
@@ -56,10 +57,13 @@ nav li a{
 .nav-icon{
     color: white;
 }
+.banner{
+    display: flex;
+}
 .banner-content{
     /* border: 2px solid tomato; */
     width: 600px;
-    margin: 0 80px 0 200px;
+    margin: 40px 80px 0 200px;
 }
 .banner-title{
     font-weight: 600;
@@ -98,6 +102,42 @@ nav li a{
     color: white;
     margin-bottom: 30px;
 }
+.card{
+    position: relative;
+}
+.card-title1{
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+.card-description1{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+.card-image{
+    width: 345px;
+    height: 580px;
+}
+.card-position{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 190px;
+    height: 85px;
+    padding: 20px 0 10px 60px;
+    border-radius: 10px;
+    position: absolute;
+    left: 62%;
+    top: 25%;
+}
+.card-position1{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 190px;
+    height: 85px;
+    padding: 20px 0 10px 60px;
+    border-radius: 10px;
+    position: absolute;
+    top: 70%;
+    right: 70%;
+}
 @media screen and (max-width: 576px) {
     .nav-bar{
         display: flex;
@@ -129,7 +169,36 @@ nav li a{
         font-size: 0.8rem;
         
     }
-    
+    .banner{
+       flex-direction: column;
+    }
+    .card-image{
+        width: 100% - 345px;
+        /* height: 580px; */
+    }
+    .card-position{
+        width: 140px;
+        height: 70px;
+        padding: 15px 20px;
+        left: 40%;
+        top: 10%;
+        
+    }
+    .card-position1{
+        background-color:rgba(255, 255, 255, 0.1);
+        width: 155px;
+        height: 72px;
+        padding: 15px 20px;
+        /* border-radius: 10px; */
+        /* position: absolute; */
+       top: 50%;
+       left: 30px;
+    }
+    .card{
+        width: 100%;
+        /* margin: 0; */
+        padding: 0.1px;
+    }
     
 
 
